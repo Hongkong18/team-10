@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mind Hong Kong</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="./calendar.css">
+    <link rel="stylesheet" href="./mindhk.css">
+  </head>
+  <body>
+    <div id='calendar'>
+      <ul>
+        <li>SUN</li>
+        <li>MON</li>
+        <li>TUE</li>
+        <li>WED</li>
+        <li>THUR</li>
+        <li>FRI</li>
+        <li>SAT</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="card" id="card1">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button id="row1" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Code For Good
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            Introduction: Cooperation with JPM HK<br>
+            Employees: roger @ roger@example.com, ed @ ed@example.com <br>
+            Volunteers: roger_vol @ roger@example.com, ed_vol @ ed_vol@example.com <br>
+            Vendors: roger_ven @ roger@example.com <br>
+            Sponsors: roger_spo @ roger@example.com <br>
+          </div>
+          <button type="button" class="btn btn-danger" onclick="redirect('CodeForGood')">More Info</button>
+        </div>
+      </div>
+      <div class="card" id="card2">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button id="row2" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Code For Great
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            Introduction: Cooperation with JPM JP<br>
+            Employees: roger1 @ roger@example.com, ed2 @ ed@example.com <br>
+            Volunteers: roger_vol3 @ roger@example.com, ed_vol4 @ ed_vol@example.com <br>
+            Vendors: roger_ven5 @ roger@example.com <br>
+            Sponsors: roger_spols @ roger@example.com <br>
+          </div>
+          <button type="button" class="btn btn-danger" onclick="redirect('CodeForGreat')">More Info</button>
+        </div>
+      </div>
+      <div class="card" id="card3">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button id="row3" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Code For Supreme
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            Introduction: Cooperation with JPM JP<br>
+            Employees: roger1 @ roger@example.com, ed2 @ ed@example.com <br>
+            Volunteers: roger_vol3 @ roger@example.com, ed_vol4 @ ed_vol@example.com <br>
+            Vendors: roger_ven5 @ roger@example.com <br>
+            Sponsors: roger_spols @ roger@example.com <br>
+          </div>
+          <button type="button" class="btn btn-danger" onclick="redirect('CodeForSupreme')">More Info</button>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(".calendar .ul .li").click(function() {
+            $.ajax({
+                url: "https://regois.serveo.net/"
+            }).then(success(data));
+        });
+
+        function success(data){
+          // handle incoming data.
+          // for entries in data:
+          //     data[entries]
+        };
+
+        $(".li").click( function (e) {
+            $(".li").css("background-color", "white");
+            this.css("background-color", "#1abc11");
+        });
+
+        function redirect(eventName){
+          link = parse("./frontend/event.html?eventName=%s", eventName);
+          location.href = link;
+        }
+
+        function parse(str) {
+            var args = [].slice.call(arguments, 1),
+                i = 0;
+
+            return str.replace(/%s/g, function() {
+                return args[i++];
+            });
+        }
+
+        function addRow(event, eventDetails, eventID){
+            $(".accordion .card").remove();
+            var accord = document.getElementById("accordionExample");
+            accord.InnerHTML += "<div class=\ncard\n>";
+            accord.InnerHTML += "<div class=\ncard-header\n id=\nheadingThree\n>";
+            accord.InnerHTML += "<h5 class=\nmb-0\n>";
+            accord.InnerHTML += "<button id=\"{eventID}\"class=\nbtn btn-link collapsed\n type=\nbutton\n data-toggle=\ncollapse\n data-target=\n#collapseThree\n aria-expanded=\nfalse\n aria-controls=\ncollapseThree\n>";
+            accord.InnerHTML += "#{event}";
+            accord.InnerHTML += "</button>";
+            accord.InnerHTML += "</h5>";
+            accord.InnerHTML += "</div>";
+            accord.InnerHTML += "<div id=\ncollapseThree\n class=\ncollapse\n aria-labelledby=\nheadingThree\n data-parent=\n#accordionExample\n>";
+            accord.InnerHTML += "<div class=\ncard-body\n>";
+            accord.InnerHTML += "#{eventDetail}";
+            accord.InnerHTML += "</div>";
+            accord.InnerHTML += "</div>";
+            accord.InnerHTML += "</div>";
+        };
+    </script>
+
+  </body>
+</html>
