@@ -81,7 +81,7 @@
             Vendors: roger_ven @ roger@example.com <br>
             Sponsors: roger_spo @ roger@example.com <br>
           </div>
-          <button type="button" class="btn btn-danger" onclick="redirect()">More Info</button>
+          <button type="button" class="btn btn-danger" onclick="redirect('CodeForGood')">More Info</button>
         </div>
       </div>
       <div class="card" id="card2">
@@ -100,7 +100,7 @@
             Vendors: roger_ven5 @ roger@example.com <br>
             Sponsors: roger_spols @ roger@example.com <br>
           </div>
-          <button type="button" class="btn btn-danger" onclick="redirect()">More Info</button>
+          <button type="button" class="btn btn-danger" onclick="redirect('CodeForGreat')">More Info</button>
         </div>
       </div>
       <div class="card" id="card3">
@@ -119,7 +119,7 @@
             Vendors: roger_ven5 @ roger@example.com <br>
             Sponsors: roger_spols @ roger@example.com <br>
           </div>
-          <button type="button" class="btn btn-danger" onclick="redirect()">More Info</button>
+          <button type="button" class="btn btn-danger" onclick="redirect('CodeForSupreme')">More Info</button>
         </div>
       </div>
 
@@ -129,7 +129,7 @@
 
         $(".calendar .ul .li").click(function() {
             $.ajax({
-                url: "http://localhost/events"
+                url: "https://regois.serveo.net/"
             }).then(success(data));
         });
 
@@ -144,13 +144,18 @@
             this.css("background-color", "#1abc11");
         });
 
-        $(document).ready( function () {
-            $('#table_id').DataTable();
-        } );
+        function redirect(eventName){
+          link = parse("./frontend/event.html?eventName=%s", eventName);
+          location.href = link;
+        }
 
-        function redirect()
-        {
-          location.href = "https://www.google.com";
+        function parse(str) {
+            var args = [].slice.call(arguments, 1),
+                i = 0;
+
+            return str.replace(/%s/g, function() {
+                return args[i++];
+            });
         }
 
         function addRow(event, eventDetails, eventID){
