@@ -17,12 +17,12 @@ html, body {
   overflow: hidden; 
 }
 
-ul {
+table {
   margin: 0;
   padding: 0;
 }
 
-li {
+td {
   float: left;
   display: block;
   width: 14.2857%;
