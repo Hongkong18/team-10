@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Table Style</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+
+<body>
+	<div class="table-title">
+		<h3>Data Table</h3>
+	</div>
+	<table class="table-fill">
+	<thead>
+		<tr>
+		<th class="text-left">Event name</th>
+		<th class="text-left">Event date</th>
+		</tr>
+	</thead>
+
+		<tbody class="table-hover">
+			{% for event in events %}
+				<tr>
+					<a href="{{event.url}}">
+						<td class="text-left">{{event.date}}</td>
+						<td class="text-left">{{event.name}}</td>
+					</a>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+  
+
+  </body>
