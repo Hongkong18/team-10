@@ -40,3 +40,8 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
   margin-left: 20px;
   margin-bottom: 10px;
 }
+
+#calendar{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
