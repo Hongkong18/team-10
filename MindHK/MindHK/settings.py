@@ -25,12 +25,13 @@ SECRET_KEY = 'g)28a_gzsove^fxll4^mgja-qllyy=ta^kr^&@73z*rz6zvie%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '10.89.180.172']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+	'intermgmt.apps.intermgmtConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'MindHK.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'MindHK',
+        'USER': 'JPMT10',
+        'PASSWORD': 'jpmt10',
+        'HOST': 'localhost',
+        'PORT': '',   
     }
 }
 
@@ -118,3 +123,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
