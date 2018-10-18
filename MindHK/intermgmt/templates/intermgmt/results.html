@@ -1,4 +1,4 @@
-{% extends "Books/layout.html" %}
+{% extends "intermgmt/layout.html" %}
 
 {% block title %}
    Voting Results
@@ -11,5 +11,5 @@
 <li>{{ book.title }} --  {{book.popularity}}vote</li>
 {% endfor %}
 </ul>
-<a href="{% url 'Books:detail' author.id %}">Vote again?</a>
+<a href="{% url 'intermgmt:detail' author.id %}">Vote again?</a>
 {% endblock %}

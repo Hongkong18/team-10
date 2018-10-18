@@ -1,4 +1,4 @@
-{% extends "Books/layout.html" %}
+{% extends "intermgmt/layout.html" %}
 
 {% block title %}
     Author List
@@ -7,7 +7,7 @@
 {% block body %}
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
-<form action="{% url 'Books:vote' author.id %}" method="post">
+<form action="{% url 'intermgmt:vote' author.id %}" method="post">
 {% csrf_token %}
 {% for book in author.book_set.all %}
 <input type="radio" name="book" id="book{{ forloop.counter }}" value="{{book.id}}">

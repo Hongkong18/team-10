@@ -1,4 +1,4 @@
-{% extends "Books/layout.html" %}
+{% extends "intermgmt/layout.html" %}
 
 {% block title %}
     Login
@@ -9,7 +9,7 @@
     <body class="auth-background">
         <h1 class="auth-heading">Log In</h1>
 
-        <form id="login-form" class="auth-form" action="{% url 'Books:login' %}" method="post"> <!-- POST result to login page-->
+        <form id="login-form" class="auth-form" action="{% url 'intermgmt:login' %}" method="post"> <!-- POST result to login page-->
             <div class="invalid">
                 {{message}}
             </div>
@@ -23,7 +23,7 @@
                 <input type="password" name="password" class="form-control" placeholder="Enter password">
             </div>
             <button id="login-button" type="submit" name="Login" class="btn auth-button">Log In</button>
-            <a id="new-user" href="{% url 'Books:signup' %}">Don't have an account? Sign Up Now!</a>
+            <a id="new-user" href="{% url 'intermgmt:signup' %}">Don't have an account? Sign Up Now!</a>
         </form>
     </body>
 

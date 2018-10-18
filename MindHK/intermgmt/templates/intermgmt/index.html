@@ -1,0 +1,17 @@
+{% extends "intermgmt/layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block body %}
+{% if event_list %}
+	<ul>
+	{% for event in event_list %}
+		<li>{{ event.name }}</li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No registered authors yet.</p>
+{% endif %}
+{% endblock %}

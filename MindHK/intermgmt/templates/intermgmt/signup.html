@@ -1,4 +1,4 @@
-{% extends "Books/layout.html" %}
+{% extends "intermgmt/layout.html" %}
 
 {% block title %}
     SignUp
@@ -9,7 +9,7 @@
     <body class="auth-background">
         <h1 class="auth-heading">Sign Up</h1>
 
-        <form id="signup-form" class="auth-form" action="{% url 'Books:signup' %}" method="post">
+        <form id="signup-form" class="auth-form" action="{% url 'intermgmt:signup' %}" method="post">
             {% csrf_token %}
             <div class="invalid">
                 {{message}}

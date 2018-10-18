@@ -31,7 +31,8 @@ ALLOWED_HOSTS = ['127.0.0.1', '10.89.180.172']
 # Application definition
 
 INSTALLED_APPS = [
-	'intermgmt.apps.intermgmtConfig',
+	#'intermgmt.apps.intermgmtConfig',
+	'intermgmt',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
