@@ -1,0 +1,107 @@
+API Specification
+
+ALL ENDPOINTS ARE GET REQUESTS
+
+1. GET EVENT DETAILS
+
+/event?name=<event_name>
+
+{'result': [
+            {'name': , 'date': dd-mm-yy},
+            ...,
+            ...
+        ]
+}
+
+2. GET ALL EVENTS
+
+/events
+
+{'result': [ 
+        {
+            'name': event['name'],
+            'date': dd-mm-yy,
+            'intro': event['intro'],
+            'volunteers':[
+                {
+                    'name' volunteer name,
+        '           'email: volunteer email
+                },
+                {...},
+                {...}
+            ],
+            'employees': [
+                {
+                    'name': employee name,
+        '           'email: employee email
+                },
+                {...},
+                {...}
+            ],
+            'vendors': [
+                {
+                    'name' vendor  name,
+        '           'email: vendor email
+                },
+                {...},
+                {...}
+            ],
+            'sponsors': [
+                {
+                    'name' sponsor name,
+        '           'email: sponsor email
+                },
+                {...},
+                {...}
+            ],
+        }
+        {
+            ....
+        },{
+            ....
+        }
+    
+    ]
+}
+
+3. GET AVAILABLE EMPLOYEES
+
+/employees?name=<event_name>
+
+{'result': [
+    {
+        'name' employee name,
+        'email: employee email
+    }
+    , {...}
+    , {}...}
+]
+}
+
+4. GET AVAILABLE VOLUNTEERS
+
+/volunteers?name=<event_name>
+
+{'result': [
+    {
+        'name' volunteer name,
+        'email: volunteer email
+    }
+    , {...}
+    , {...}
+]
+}
+
+5. GET AVAILABLE SPONSORS
+
+/sponsors?name=<event_name>
+
+{'result': [
+    {
+        'name' sponsor name,
+        'email: sponsor email
+    }
+    , {...}
+    , {...}
+]
+}
